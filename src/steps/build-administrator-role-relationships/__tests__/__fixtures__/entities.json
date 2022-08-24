@@ -5,9 +5,7 @@
     "active": true,
     "_key": "trend-micro-administrator:1",
     "_type": "trend_micro_administrator",
-    "_class": [
-      "User"
-    ],
+    "_class": ["User"],
     "roleId": "trend-micro-administrator-role:1",
     "name": "charlie.duong@jupiterone.io",
     "createdOn": 1586982455921,
@@ -19,9 +17,7 @@
     "active": true,
     "_key": "trend-micro-administrator:8",
     "_type": "trend_micro_administrator",
-    "_class": [
-      "User"
-    ],
+    "_class": ["User"],
     "roleId": "trend-micro-administrator-role:2",
     "name": "Charlie Test",
     "createdOn": 1587489647292,
@@ -33,9 +29,7 @@
     "description": "",
     "_key": "trend-micro-administrator-role:1",
     "_type": "trend_micro_administrator_role",
-    "_class": [
-      "AccessRole"
-    ],
+    "_class": ["AccessRole"],
     "urn": "urn:tmds:identity:us-east-ds-1:78422:role/Full Access",
     "id": "trend-micro-administrator-role:1",
     "displayName": "Full Access"
@@ -45,9 +39,7 @@
     "description": "",
     "_key": "trend-micro-administrator-role:2",
     "_type": "trend_micro_administrator_role",
-    "_class": [
-      "AccessRole"
-    ],
+    "_class": ["AccessRole"],
     "urn": "urn:tmds:identity:us-east-ds-1:78422:role/Auditor",
     "id": "trend-micro-administrator-role:2",
     "displayName": "Auditor"
@@ -57,9 +49,7 @@
     "description": "",
     "_key": "trend-micro-administrator-role:3",
     "_type": "trend_micro_administrator_role",
-    "_class": [
-      "AccessRole"
-    ],
+    "_class": ["AccessRole"],
     "urn": "urn:tmds:identity:us-east-ds-1:78422:role/New Role",
     "id": "trend-micro-administrator-role:3",
     "displayName": "New Role"
@@ -69,9 +59,7 @@
     "description": "",
     "_key": "trend-micro-administrator-role:4",
     "_type": "trend_micro_administrator_role",
-    "_class": [
-      "AccessRole"
-    ],
+    "_class": ["AccessRole"],
     "urn": "urn:tmds:identity:us-east-ds-1:78422:role/New Role_2",
     "id": "trend-micro-administrator-role:4",
     "displayName": "New Role_2"
