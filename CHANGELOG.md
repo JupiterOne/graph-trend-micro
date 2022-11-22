@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.2
+
+### Changed
+
+- Updated build and publish workflow
+
 ## 2.2.1
 
 ### Added
