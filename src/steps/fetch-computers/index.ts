@@ -50,6 +50,9 @@ export function createComputerEntity(computer: DeepSecurityComputer): Entity {
         hostname: computer.hostName,
         platform: extractPlatform(computer.platform),
         groupId: createComputerGroupEntityIdentifier(computer.groupID),
+        cloudProvider: computer.ec2VirtualMachineSummary?.cloudProvider,
+        awsAccountId: computer.ec2VirtualMachineSummary?.accountID,
+        ec2InstanceId: computer.ec2VirtualMachineSummary?.instanceID,
       },
     },
   });
