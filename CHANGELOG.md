@@ -8,6 +8,20 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.1
+
+### Added
+
+Added the following properties to `trend_micro_computer`:
+
+- ec2InstanceId
+- cloudProvider
+- awsAccountId
+- agentStatus
+- applianceStatus
+- hostGUID
+- agentGUID
+
 ## 2.2.0 - 2021-07-12
 
 ### Changed
