@@ -105,6 +105,14 @@ test('computer entity conversion', () => {
     groupId: 'trend-micro-computer-group:25',
     description:
       "This computer is a demonstration of Deep Security's capabilities. Open a browser to http://ec2-54-187-35-33.us-west-2.compute.amazonaws.com for more information.",
+    agentGUID: undefined,
+    agentStatus: undefined,
+    applianceStatus: undefined,
+    awsAccountId: undefined,
+    cloudProvider: undefined,
+    createdOn: undefined,
+    ec2InstanceId: undefined,
+    hostGUID: '6BE38408-DA9E-4A03-1EB4-5CE824AD0C58',
     _rawData: [
       {
         name: 'default',
