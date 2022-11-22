@@ -3,10 +3,10 @@
   "version": "2.2.1",
   "description": "A graph conversion tool for https://trendmicro.com",
   "license": "MPL-2.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
-    "dist"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
