@@ -44,7 +44,7 @@ export function createComputerGroupEntity(
     entityData: {
       source: group,
       assign: {
-        _key: id,
+        _key: id!,
         _type: COMPUTER_GROUP_TYPE,
         // NOTE: Some of the entities collected through this may seem
         // like they really should be part of the Network class

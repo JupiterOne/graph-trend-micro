@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.4 - 2022-11-23
+
+### Changed
+
+- Updated `node-fetch` and `@lifeomic/attempt` dependencies
+- Updated package.json scripts
+
 ## 2.2.3
 
 ### Changed
