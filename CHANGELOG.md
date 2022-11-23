@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.2.3
+
+### Changed
+
+- Updated `tsconfig.dist.json`
+
 ## 2.2.2
 
 ### Changed
