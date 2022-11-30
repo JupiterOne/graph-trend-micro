@@ -96,7 +96,7 @@ test('computer entity conversion', () => {
   expect(createComputerEntity(computer)).toEqual({
     _key: 'trend-micro-computer:1',
     _type: 'trend_micro_computer',
-    _class: ['Host'],
+    _class: ['Host', 'Device'],
     name: 'ec2-54-187-35-33.us-west-2.compute.amazonaws.com',
     displayName: 'ec2-54-187-35-33.us-west-2.compute.amazonaws.com',
     hostname: 'ec2-54-187-35-33.us-west-2.compute.amazonaws.com',
@@ -113,6 +113,11 @@ test('computer entity conversion', () => {
     createdOn: undefined,
     ec2InstanceId: undefined,
     hostGUID: '6BE38408-DA9E-4A03-1EB4-5CE824AD0C58',
+    category: 'endpoint',
+    make: null,
+    model: null,
+    serial: null,
+    deviceId: '6BE38408-DA9E-4A03-1EB4-5CE824AD0C58',
     _rawData: [
       {
         name: 'default',
