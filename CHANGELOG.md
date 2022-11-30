@@ -11,7 +11,7 @@ and this project adheres to
 ### Added
 
 - Assigned 'Device' class to the `trend_micro_computer` entity. As of now, the
-  `trend_micro_computer` entitiy is classified as both 'Host' and 'Device'.
+  `trend_micro_computer` entity is classified as both 'Host' and 'Device'.
 
 ## 2.2.4 - 2022-11-23
 
