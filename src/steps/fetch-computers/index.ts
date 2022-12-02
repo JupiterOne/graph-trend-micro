@@ -41,7 +41,7 @@ export function createComputerEntity(computer: DeepSecurityComputer): Entity {
       assign: {
         _key: id,
         _type: COMPUTER_TYPE,
-        _class: 'Host',
+        _class: ['Host', 'Device'],
 
         // normalize property names to match data model
         id,
@@ -57,6 +57,11 @@ export function createComputerEntity(computer: DeepSecurityComputer): Entity {
         applianceStatus: computer.computerStatus?.applianceStatus,
         agentGUID: computer.agentGUID,
         hostGUID: computer.hostGUID,
+        category: 'endpoint',
+        make: null,
+        model: null,
+        serial: null,
+        deviceId: computer.hostGUID,
       },
     },
   });
