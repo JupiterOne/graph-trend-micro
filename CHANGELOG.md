@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.3.0 - 2022-12-02
+
 ### Added
 
 - Assigned 'Device' class to the `trend_micro_computer` entity. As of now, the
