@@ -18,7 +18,7 @@ const step: IntegrationStep<TrendMicroIntegrationConfig> = {
     {
       resourceName: 'Computer',
       _type: COMPUTER_TYPE,
-      _class: 'Host',
+      _class: ['Host', 'Device'],
     },
   ],
   relationships: [],
