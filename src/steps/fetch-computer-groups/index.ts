@@ -39,7 +39,6 @@ export function createComputerGroupEntity(
   group: DeepSecurityComputerGroup,
 ): Entity {
   const id = createComputerGroupEntityIdentifier(group.ID);
-
   return createIntegrationEntity({
     entityData: {
       source: group,
