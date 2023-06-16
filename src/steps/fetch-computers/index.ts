@@ -2,6 +2,7 @@ import {
   Entity,
   IntegrationStep,
   createIntegrationEntity,
+  parseTimePropertyValue,
 } from '@jupiterone/integration-sdk-core';
 
 import { createDeepSecurityClient, DeepSecurityComputer } from '../../provider';
@@ -48,6 +49,7 @@ export function createComputerEntity(computer: DeepSecurityComputer): Entity {
         createdOn: computer.created,
         name: computer.displayName || computer.hostName,
         hostname: computer.hostName,
+        description: computer.description,
         platform: extractPlatform(computer.platform),
         groupId: createComputerGroupEntityIdentifier(computer.groupID),
         cloudProvider: computer.ec2VirtualMachineSummary?.cloudProvider,
@@ -62,6 +64,18 @@ export function createComputerEntity(computer: DeepSecurityComputer): Entity {
         model: null,
         serial: null,
         deviceId: computer.hostGUID,
+        antiMalwareStatus: computer.antiMalware?.moduleStatus?.agentStatus,
+        webReputationStatus: computer.webReputation?.moduleStatus?.agentStatus,
+        firewallStatus: computer.firewall?.moduleStatus?.agentStatus,
+        intrusionPreventionStatus:
+          computer.intrusionPrevention?.moduleStatus?.agentStatus,
+        integrityMonitoringStatus:
+          computer.integrityMonitoring?.moduleStatus?.agentStatus,
+        logInspectionStatus: computer.logInspection?.moduleStatus?.agentStatus,
+        applicationControlStatus:
+          computer.applicationControl?.moduleStatus?.agentStatus,
+        securityUpdateStatus: computer.securityUpdates?.updateStatus?.status,
+        lastSeenOn: parseTimePropertyValue(computer.lastAgentCommunication), // Trend Micro unfortunately does not make the scan date available to the API for devices that do not have agents installed.
       },
     },
   });
