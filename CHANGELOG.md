@@ -8,6 +8,15 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 2.3.1 - 2023-06-20
+
+### Added
+
+- `lastSeenOn`, `webReputationStatus`, `firewallStatus`,
+  `intrusionPreventionStatus`, `integrityMonitoringStatus`,
+  `logInspectionStatus`, `applicationControlStatus`, `securityUpdateStatus`, and
+  `description` to Device entities.
+
 ## 2.3.0 - 2022-12-02
 
 ### Added
