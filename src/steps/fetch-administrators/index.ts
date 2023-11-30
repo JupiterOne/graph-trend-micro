@@ -45,7 +45,7 @@ export function createAdministratorEntity(
         _key: createAdministratorEntityIdentifier(administrator.ID),
         _type: ADMIN_TYPE,
         _class: 'User',
-
+        mfaType: administrator.mfaType,
         roleId: administrator.roleID,
         // normalize property names to match data model
         name: administrator.fullName || administrator.username,

@@ -136,6 +136,7 @@ test('administator entity conversion', () => {
     createdOn: 1587489647292,
     username: 'charlie.duong.test',
     roleId: 2,
+    mfaType: 'none',
     _rawData: [
       {
         name: 'default',

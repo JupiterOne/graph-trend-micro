@@ -9,6 +9,9 @@
   "license": "MPL-2.0",
   "main": "src/index.js",
   "types": "src/index.d.ts",
+  "engines": {
+    "node": ">=18.0.0 <19.x"
+  },
   "files": [
     "src"
   ],
@@ -31,13 +34,14 @@
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "@jupiterone/integration-sdk-core": "^6.10.0",
-    "@jupiterone/integration-sdk-dev-tools": "^6.10.0",
-    "@jupiterone/integration-sdk-testing": "^6.10.0",
+    "@jupiterone/integration-sdk-core": "^11.1.0",
+    "@jupiterone/integration-sdk-dev-tools": "^11.1.0",
+    "@jupiterone/integration-sdk-testing": "^11.1.0",
+    "@types/node": "^18",
     "jest-fetch-mock": "^3.0.3",
     "wait-for-expect": "^3.0.2"
   },
   "peerDependencies": {
-    "@jupiterone/integration-sdk-core": "^6.10.0"
+    "@jupiterone/integration-sdk-core": "^11.1.0"
   }
 }
