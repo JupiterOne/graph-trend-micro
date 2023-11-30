@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`computer fetching 1`] = `
-Array [
-  Object {
-    "_class": Array [
+[
+  {
+    "_class": [
       "Host",
       "Device",
     ],
@@ -39,8 +39,8 @@ Array [
     "serial": null,
     "webReputationStatus": "active",
   },
-  Object {
-    "_class": Array [
+  {
+    "_class": [
       "Host",
       "Device",
     ],
@@ -76,8 +76,8 @@ Array [
     "serial": null,
     "webReputationStatus": "inactive",
   },
-  Object {
-    "_class": Array [
+  {
+    "_class": [
       "Host",
       "Device",
     ],

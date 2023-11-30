@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 3.0.0 - 2023-11-30
+
+- Updated to node 18
+- Fixed failing tests after sdk update due to Polly v5 to v6 breaking changes:
+  https://github.com/Netflix/pollyjs/issues/434
+- Added 'ms' option to parseTimePropertyValue function
+
 ## 2.3.1 - 2023-06-20
 
 ### Added

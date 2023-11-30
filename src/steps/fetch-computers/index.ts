@@ -75,7 +75,10 @@ export function createComputerEntity(computer: DeepSecurityComputer): Entity {
         applicationControlStatus:
           computer.applicationControl?.moduleStatus?.agentStatus,
         securityUpdateStatus: computer.securityUpdates?.updateStatus?.status,
-        lastSeenOn: parseTimePropertyValue(computer.lastAgentCommunication), // Trend Micro unfortunately does not make the scan date available to the API for devices that do not have agents installed.
+        lastSeenOn: parseTimePropertyValue(
+          computer.lastAgentCommunication,
+          'ms',
+        ), // Trend Micro unfortunately does not make the scan date available to the API for devices that do not have agents installed.
       },
     },
   });
