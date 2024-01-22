@@ -8,39 +8,38 @@ import {
   createDirectRelationship,
 } from '@jupiterone/integration-sdk-core';
 
-import { STEP_ID as COMPUTER_STEP, COMPUTER_TYPE } from '../fetch-computers';
+import { STEP_ID as SENSOR_STEP, SENSOR_TYPE } from '../fetch-sensors';
 import {
   STEP_ID as COMPUTER_GROUP_STEP,
   COMPUTER_GROUP_TYPE,
 } from '../fetch-computer-groups';
 
+export const STEP_ID = 'build-computer-group-relationships';
+
 const step: IntegrationStep = {
-  id: 'build-computer-group-relationships',
+  id: STEP_ID,
   name: 'Build computer group relationships',
   entities: [],
   relationships: [
     {
-      _type: 'trend_micro_computer_has_group',
+      _type: 'trend_micro_sensor_has_computer_group',
       sourceType: COMPUTER_GROUP_TYPE,
       _class: RelationshipClass.HAS,
-      targetType: COMPUTER_TYPE,
+      targetType: SENSOR_TYPE,
     },
   ],
-  dependsOn: [COMPUTER_STEP, COMPUTER_GROUP_STEP],
+  dependsOn: [SENSOR_STEP, COMPUTER_GROUP_STEP],
   async executionHandler({ jobState }: IntegrationStepExecutionContext) {
     const groupIdMap = await createComputerGroupIdMap(jobState);
 
-    await jobState.iterateEntities(
-      { _type: COMPUTER_TYPE },
-      async (computer) => {
-        const group = groupIdMap.get(computer.groupId as string);
+    await jobState.iterateEntities({ _type: SENSOR_TYPE }, async (sensor) => {
+      const group = groupIdMap.get(sensor.groupId as string);
 
-        if (group) {
-          const relationship = createComputerGroupRelationship(computer, group);
-          await jobState.addRelationships([relationship]);
-        }
-      },
-    );
+      if (group) {
+        const relationship = createComputerGroupRelationship(sensor, group);
+        await jobState.addRelationships([relationship]);
+      }
+    });
   },
 };
 
@@ -58,12 +57,12 @@ async function createComputerGroupIdMap(
 export default step;
 
 export function createComputerGroupRelationship(
-  computer: Entity,
+  sensor: Entity,
   group: Entity,
 ): Relationship {
   return createDirectRelationship({
     _class: RelationshipClass.HAS,
-    from: computer,
+    from: sensor,
     to: group,
   });
 }

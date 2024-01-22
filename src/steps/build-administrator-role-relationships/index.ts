@@ -11,8 +11,10 @@ import {
 import { STEP_ID as ADMIN_STEP, ADMIN_TYPE } from '../fetch-administrators';
 import { STEP_ID as ROLE_STEP, ROLE_TYPE } from '../fetch-administrator-roles';
 
+export const STEP_ID = 'build-administrator-role-relationships';
+
 const step: IntegrationStep = {
-  id: 'build-administrator-role-relationships',
+  id: STEP_ID,
   name: 'Build administrator role relationships',
   entities: [],
   relationships: [

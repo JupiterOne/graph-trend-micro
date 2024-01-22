@@ -7,25 +7,26 @@ import buildComputerGroupRelationships from './steps/build-computer-group-relati
 import fetchAdministrators from './steps/fetch-administrators';
 import fetchAdministratorRoles from './steps/fetch-administrator-roles';
 import fetchApiKeys from './steps/fetch-api-keys';
-import fetchComputers from './steps/fetch-computers';
+import fetchSensors from './steps/fetch-sensors';
 import fetchComputerGroups from './steps/fetch-computer-groups';
 import { TrendMicroIntegrationConfig } from './types';
 
-export const invocationConfig: IntegrationInvocationConfig<TrendMicroIntegrationConfig> = {
-  instanceConfigFields: {
-    apiKey: {
-      type: 'string',
-      mask: true,
+export const invocationConfig: IntegrationInvocationConfig<TrendMicroIntegrationConfig> =
+  {
+    instanceConfigFields: {
+      apiKey: {
+        type: 'string',
+        mask: true,
+      },
     },
-  },
-  validateInvocation,
-  integrationSteps: [
-    buildAdminRoleRelationships,
-    buildComputerGroupRelationships,
-    fetchAdministrators,
-    fetchAdministratorRoles,
-    fetchApiKeys,
-    fetchComputers,
-    fetchComputerGroups,
-  ],
-};
+    validateInvocation,
+    integrationSteps: [
+      buildAdminRoleRelationships,
+      buildComputerGroupRelationships,
+      fetchAdministrators,
+      fetchAdministratorRoles,
+      fetchApiKeys,
+      fetchSensors,
+      fetchComputerGroups,
+    ],
+  };

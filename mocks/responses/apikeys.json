@@ -1,0 +1,40 @@
+{
+  "apiKeys": [
+    {
+      "keyName": "jupiterone-test",
+      "description": "Test api key for integration",
+      "locale": "en-US",
+      "roleID": 2,
+      "timeZone": "US/Eastern",
+      "active": true,
+      "created": 1586982900004,
+      "unsuccessfulSignInAttempts": 0,
+      "serviceAccount": false,
+      "ID": 2
+    },
+    {
+      "keyName": "view-only",
+      "description": "",
+      "locale": "en-US",
+      "roleID": 3,
+      "timeZone": "US/Eastern",
+      "active": true,
+      "created": 1587152322461,
+      "unsuccessfulSignInAttempts": 0,
+      "serviceAccount": false,
+      "ID": 3
+    },
+    {
+      "keyName": "Full access",
+      "description": "",
+      "locale": "en-US",
+      "roleID": 1,
+      "timeZone": "US/Eastern",
+      "active": true,
+      "created": 1587157800041,
+      "unsuccessfulSignInAttempts": 0,
+      "serviceAccount": false,
+      "ID": 4
+    }
+  ]
+}

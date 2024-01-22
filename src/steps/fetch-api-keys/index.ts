@@ -9,14 +9,16 @@ import { TrendMicroIntegrationConfig } from '../../types';
 
 const API_KEY_TYPE = 'trend_micro_api_key';
 
+export const STEP_ID = 'fetch-api-keys';
+
 const step: IntegrationStep<TrendMicroIntegrationConfig> = {
-  id: 'fetch-api-keys',
+  id: STEP_ID,
   name: 'Fetch API Keys',
   entities: [
     {
       resourceName: 'API Key',
       _type: API_KEY_TYPE,
-      _class: 'Key',
+      _class: ['Key'],
     },
   ],
   relationships: [],
@@ -39,7 +41,7 @@ export function createApiKeyEntity(apiKey: DeepSecurityApiKey): Entity {
       assign: {
         _key: id,
         _type: API_KEY_TYPE,
-        _class: 'Key',
+        _class: ['Key'],
 
         // normalize property names to match data model
         id,
