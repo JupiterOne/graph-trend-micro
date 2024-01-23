@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## 4.0.0 - 2024-01-23
+
 ### Changed
 
 - Renamed trend_micro_computer to trend_micro_sensor and change its \_class to
