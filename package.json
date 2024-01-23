@@ -1,6 +1,6 @@
 {
   "name": "@jupiterone/graph-trend-micro",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A graph conversion tool for https://trendmicro.com",
   "repository": {
     "type": "git",
