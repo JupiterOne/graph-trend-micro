@@ -81,8 +81,8 @@ The following entities are created:
 | API Key            | `trend_micro_api_key`            | `Key`           |
 | Administrator      | `trend_micro_administrator`      | `User`          |
 | Administrator Role | `trend_micro_administrator_role` | `AccessRole`    |
-| Computer           | `trend_micro_computer`           | `Host`          |
 | Computer Group     | `trend_micro_computer_group`     | `Group`         |
+| Sensor             | `trend_micro_sensor`             | `HostAgent`     |
 
 ### Relationships
 
@@ -91,7 +91,7 @@ The following relationships are created:
 | Source Entity `_type`        | Relationship `_class` | Target Entity `_type`            |
 | ---------------------------- | --------------------- | -------------------------------- |
 | `trend_micro_administrator`  | **ASSIGNED**          | `trend_micro_administrator_role` |
-| `trend_micro_computer_group` | **HAS**               | `trend_micro_computer`           |
+| `trend_micro_computer_group` | **HAS**               | `trend_micro_sensor`             |
 
 <!--
 ********************************************************************************

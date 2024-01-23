@@ -20,7 +20,7 @@ const step: IntegrationStep<TrendMicroIntegrationConfig> = {
     {
       resourceName: 'Administrator Role',
       _type: ROLE_TYPE,
-      _class: 'AccessRole',
+      _class: ['AccessRole'],
     },
   ],
   relationships: [],
@@ -45,8 +45,8 @@ export function createAdministratorRoleEntity(
       assign: {
         _key: id,
         _type: ROLE_TYPE,
-        _class: 'AccessRole',
-        id,
+        _class: ['AccessRole'],
+        id: String(role.ID),
         urn: role.urn,
         // normalize property names to match data model
         name: role.name || role.urn,

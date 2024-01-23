@@ -1,0 +1,29 @@
+{
+  "requests": {
+    "/roles": {
+      "method": "GET",
+      "status": 200,
+      "content": "responses/roles.json"
+    },
+    "/administrators": {
+      "method": "GET",
+      "status": 200,
+      "content": "responses/administrators.json"
+    },
+    "/apikeys": {
+      "method": "GET",
+      "status": 200,
+      "content": "responses/apikeys.json"
+    },
+    "/computergroups": {
+      "method": "GET",
+      "status": 200,
+      "content": "responses/computergroups.json"
+    },
+    "/computers": {
+      "method": "GET",
+      "status": 200,
+      "content": "responses/computers.json"
+    }
+  }
+}

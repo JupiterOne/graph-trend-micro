@@ -1,37 +1,25 @@
-import { createMockStepExecutionContext } from '../../../../test';
+import { STEP_ID } from '../index';
+import { executeStepWithDependencies } from '@jupiterone/integration-sdk-testing';
+import { buildStepTestConfig } from '../../../../test/config';
+import { setupRecording, Recording } from '../../../../test/recording';
 
-import step from '../index';
+let recording: Recording;
 
-import entities from './__fixtures__/entities.json';
+afterEach(async () => {
+  if (recording) {
+    await recording.stop();
+  }
+});
 
-test('step data collection', async () => {
-  const context = createMockStepExecutionContext({
-    entities,
-    instanceConfig: {
-      apiKey: 'apiKey',
-    },
+describe(STEP_ID, () => {
+  test('success', async () => {
+    recording = setupRecording({
+      name: STEP_ID,
+      directory: __dirname,
+    });
+
+    const stepConfig = buildStepTestConfig(STEP_ID);
+    const stepResults = await executeStepWithDependencies(stepConfig);
+    expect(stepResults).toMatchStepMetadata(stepConfig);
   });
-  await step.executionHandler(context);
-
-  expect(context.jobState.collectedEntities).toHaveLength(0);
-  expect(context.jobState.collectedRelationships).toHaveLength(2);
-
-  expect(context.jobState.collectedRelationships).toEqual([
-    expect.objectContaining({
-      _key: 'trend-micro-computer:34|has|trend-micro-computer-group:79',
-      _type: 'trend_micro_computer_has_group',
-      _class: 'HAS',
-      _fromEntityKey: 'trend-micro-computer:34',
-      _toEntityKey: 'trend-micro-computer-group:79',
-      displayName: 'HAS',
-    }),
-    expect.objectContaining({
-      _key: 'trend-micro-computer:35|has|trend-micro-computer-group:79',
-      _type: 'trend_micro_computer_has_group',
-      _class: 'HAS',
-      _fromEntityKey: 'trend-micro-computer:35',
-      _toEntityKey: 'trend-micro-computer-group:79',
-      displayName: 'HAS',
-    }),
-  ]);
 });

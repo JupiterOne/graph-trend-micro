@@ -1,0 +1,1187 @@
+{
+  "roles": [
+    {
+      "name": "Full Access",
+      "description": "",
+      "urn": "urn:tmds:identity:us-east-ds-1:78422:role/Full Access",
+      "immutable": true,
+      "canOnlyManipulateUsersWithEqualOrLesserRights": false,
+      "allComputers": true,
+      "allPolicies": true,
+      "allowUserInterface": true,
+      "allowWebService": true,
+      "rights": {
+        "platformRights": {
+          "administratorRights": {
+            "canCreateNewAdministrators": true,
+            "canDeleteAdministrators": true,
+            "canEditAdministratorProperties": true,
+            "canViewAdministrators": true
+          },
+          "administratorRoleRights": {
+            "canCreateNewAdministratorRoles": true,
+            "canDeleteAdministratorRoles": true,
+            "canEditAdministratorRoleProperties": true,
+            "canViewAdministratorRoles": true
+          },
+          "agentVersionControlRights": { "canEditAgentVersionControls": true },
+          "alertConfigurationRights": { "canEditAlertConfigurations": true },
+          "alertRights": { "canDismissGlobalAlerts": true },
+          "certificateRights": {
+            "canCreateNewCertificates": true,
+            "canDeleteCertificates": true
+          },
+          "computerRights": {
+            "canAddAndRemoveComputerGroups": true,
+            "canCreateNewComputers": true,
+            "canDeleteComputers": true,
+            "canDismissAlerts": true,
+            "canEditComputerProperties": true,
+            "canImportComputers": true,
+            "canManageCloudAccounts": true,
+            "canManageDirectories": true,
+            "canManageVCenters": true,
+            "canTagComputers": true,
+            "canViewNotRelatedToComputers": true,
+            "canViewOtherComputers": true
+          },
+          "contactRights": {
+            "canCreateNewContacts": true,
+            "canDeleteContacts": true,
+            "canEditContactProperties": true,
+            "canViewContacts": true
+          },
+          "diagnosticRights": { "canCreateDiagnosticPackages": true },
+          "assetValueRights": {
+            "canCreateNewAssetValues": true,
+            "canDeleteAssetValues": true,
+            "canEditAssetValueProperties": true
+          },
+          "licenseRights": { "canChangeLicense": true, "canViewLicense": true },
+          "multiTenantRights": {
+            "canCreateTenants": true,
+            "canDeleteTenants": true,
+            "canEditTenantGeneralProperties": true,
+            "canEditTenantModules": true,
+            "canEditTenantAccountDetails": true,
+            "canEditTenantFeatures": true,
+            "canEditTenantSettings": true,
+            "canCreateAndEditTenantDatabaseServers": true,
+            "canDeleteTenantDatabaseServers": true,
+            "canManageTenantAPIKeys": true,
+            "canSignInAsTenant": true,
+            "canViewTenants": true
+          },
+          "policyRights": {
+            "canCreateNewPolicies": true,
+            "canDeletePolicies": true,
+            "canEditPolicyProperties": true,
+            "canImportPolicies": true,
+            "canViewOtherPolicies": true
+          },
+          "portListRights": {
+            "canCreateNewPortLists": true,
+            "canDeletePortLists": true,
+            "canEditPortListProperties": true
+          },
+          "proxyRights": {
+            "canCreateNewProxies": true,
+            "canDeleteProxies": true,
+            "canEditProxyProperties": true
+          },
+          "relayGroupRights": {
+            "canCreateNewRelayGroups": true,
+            "canDeleteRelayGroups": true,
+            "canEditRelayGroupProperties": true
+          },
+          "scanCacheRights": { "canManageScanCache": true },
+          "scheduledTaskRights": {
+            "canCreateNewScheduledTasks": true,
+            "canDeleteScheduledTasks": true,
+            "canEditScheduledTaskProperties": true,
+            "canExecuteScheduledTasks": true,
+            "canViewScheduledTasks": true
+          },
+          "scheduleRights": {
+            "canCreateNewSchedules": true,
+            "canDeleteSchedules": true,
+            "canEditScheduleProperties": true
+          },
+          "settingRights": { "canEditSettings": true, "canViewSettings": true },
+          "expertSettingRights": {
+            "canEditExpertSettings": true,
+            "canViewExpertSettings": true
+          },
+          "syslogConfigurationRights": {
+            "canCreateNewSyslogConfigurations": true,
+            "canDeleteSyslogConfigurations": true,
+            "canEditSyslogConfigurationProperties": true
+          },
+          "systemInformationRights": {
+            "canManageExtensions": true,
+            "canManageNodes": true,
+            "canViewSystemInformation": true
+          },
+          "taggingRights": {
+            "canDeleteAutoTagRules": true,
+            "canUpdateAutoTagRules": true,
+            "canRunAutoTagRules": true,
+            "canDeleteTags": true,
+            "canTag": true
+          },
+          "updateRights": {
+            "canImportSoftware": true,
+            "canDeleteSoftware": true,
+            "canEditSoftwareProperties": true,
+            "canImportRuleUpdates": true,
+            "canDeleteRuleUpdates": true,
+            "canViewRuleUpdates": true
+          },
+          "apikeyRights": {
+            "canCreateNewApiKeys": true,
+            "canDeleteApiKeys": true,
+            "canEditApiKeyProperties": true,
+            "canViewApiKeys": true
+          },
+          "iplistRights": {
+            "canCreateNewIPLists": true,
+            "canDeleteIPLists": true,
+            "canEditIPListProperties": true
+          },
+          "samlidentityProviderRights": {
+            "canCreateNewSAMLIdentityProviders": true,
+            "canDeleteSAMLIdentityProviders": true,
+            "canEditSAMLIdentityProviders": true,
+            "canViewSAMLIdentityProviders": true
+          }
+        },
+        "antiMalwareRights": {
+          "antiMalwareConfigurationRights": {
+            "canCreateNewAntiMalwareConfigurations": true,
+            "canDeleteAntiMalwareConfigurations": true,
+            "canEditAntiMalwareConfigurations": true
+          },
+          "directoryListRights": {
+            "canCreateNewDirectoryLists": true,
+            "canDeleteDirectoryLists": true,
+            "canEditDirectoryListProperties": true
+          },
+          "fileListRights": {
+            "canCreateNewFileLists": true,
+            "canDeleteFileLists": true,
+            "canEditFileListProperties": true
+          },
+          "fileExtensionListRights": {
+            "canCreateNewFileExtensionLists": true,
+            "canDeleteFileExtensionLists": true,
+            "canEditFileExtensionListProperties": true
+          },
+          "identifiedFileRights": {
+            "canDeleteIdentifiedFiles": true,
+            "canDownloadIdentifiedFiles": true,
+            "canRestoreIdentifiedFiles": true,
+            "canSubmitIdentifiedFiles": true
+          }
+        },
+        "webReputationRights": {
+          "webReputationConfigurationRights": {
+            "canEditWebReputationConfiguration": true
+          }
+        },
+        "sensingModeRights": {
+          "sensingModeConfigurationRights": {
+            "canEditSensingModeConfiguration": true
+          }
+        },
+        "firewallRights": {
+          "contextRights": {
+            "canCreateNewContexts": true,
+            "canDeleteContexts": true,
+            "canEditContextProperties": true
+          },
+          "firewallRuleRights": {
+            "canCreateNewFirewallRules": true,
+            "canDeleteFirewallRules": true,
+            "canEditFirewallRuleProperties": true
+          },
+          "statefulConfigurationRights": {
+            "canCreateNewStatefulConfigurations": true,
+            "canDeleteStatefulConfigurations": true,
+            "canEditStatefulConfigurationProperties": true
+          },
+          "macListRights": {
+            "canCreateNewMACLists": true,
+            "canDeleteMACLists": true,
+            "canEditMACListProperties": true
+          }
+        },
+        "intrusionPreventionRights": {
+          "applicationTypeRights": {
+            "canCreateNewApplicationTypes": true,
+            "canDeleteApplicationTypes": true,
+            "canEditApplicationTypeProperties": true
+          },
+          "intrusionPreventionRuleRights": {
+            "canCreateNewIntrusionPreventionRules": true,
+            "canDeleteIntrusionPreventionRules": true,
+            "canEditIntrusionPreventionRuleProperties": true
+          }
+        },
+        "integrityMonitoringRights": {
+          "integrityMonitoringRuleRights": {
+            "canCreateNewIntegrityMonitoringRules": true,
+            "canDeleteIntegrityMonitoringRules": true,
+            "canEditIntegrityMonitoringRuleProperties": true
+          }
+        },
+        "logInspectionRights": {
+          "logInspectionDecoderRights": {
+            "canCreateNewLogInspectionDecoders": true,
+            "canDeleteLogInspectionDecoders": true,
+            "canEditLogInspectionDecoderProperties": true
+          },
+          "logInspectionRuleRights": {
+            "canCreateNewLogInspectionRules": true,
+            "canDeleteLogInspectionRules": true,
+            "canEditLogInspectionRuleProperties": true
+          }
+        },
+        "applicationControlRights": {
+          "driftRights": { "canAllowOrBlockDrift": true, "canViewDrift": true },
+          "rulesetRights": {
+            "canCreateNewRulesets": true,
+            "canDeleteRulesets": true,
+            "canEditRulesetProperties": true,
+            "canViewRulesets": true
+          },
+          "ruleRights": {
+            "canCreateNewAppControlRules": true,
+            "canDeleteAppControlRules": true,
+            "canEditAppControlRulesProperties": true,
+            "canViewAppControlRules": true
+          },
+          "softwareInventoryRights": {
+            "canCreateNewSoftwareInventory": true,
+            "canDeleteSoftwareInventory": true,
+            "canViewSoftwareInventory": true
+          }
+        },
+        "hostedServiceRights": {
+          "accountRights": {
+            "canDeleteAccounts": true,
+            "canUpdateAccounts": true,
+            "canViewAccountBilling": true
+          },
+          "fixRights": { "canViewFixes": true },
+          "heapRights": { "canViewHeap": true },
+          "licenseRateRights": {
+            "canSaveLicenseRates": true,
+            "canViewLicenseRates": true
+          },
+          "queryRights": { "canViewQuery": true },
+          "queryTracebackRights": { "canViewQueryTracebacks": true },
+          "serverLogRights": { "canViewServerLogs": true },
+          "stackTraceRights": { "canViewStackTraces": true },
+          "networkSecurityRights": {
+            "canCreateDeviceAuthorizationTokens": true
+          }
+        }
+      },
+      "ID": 1
+    },
+    {
+      "name": "Auditor",
+      "description": "",
+      "urn": "urn:tmds:identity:us-east-ds-1:78422:role/Auditor",
+      "immutable": false,
+      "canOnlyManipulateUsersWithEqualOrLesserRights": false,
+      "allComputers": true,
+      "allPolicies": true,
+      "allowUserInterface": true,
+      "allowWebService": true,
+      "rights": {
+        "platformRights": {
+          "administratorRights": {
+            "canCreateNewAdministrators": false,
+            "canDeleteAdministrators": false,
+            "canEditAdministratorProperties": false,
+            "canViewAdministrators": false
+          },
+          "administratorRoleRights": {
+            "canCreateNewAdministratorRoles": false,
+            "canDeleteAdministratorRoles": false,
+            "canEditAdministratorRoleProperties": false,
+            "canViewAdministratorRoles": false
+          },
+          "agentVersionControlRights": { "canEditAgentVersionControls": false },
+          "alertConfigurationRights": { "canEditAlertConfigurations": false },
+          "alertRights": { "canDismissGlobalAlerts": false },
+          "certificateRights": {
+            "canCreateNewCertificates": false,
+            "canDeleteCertificates": false
+          },
+          "computerRights": {
+            "canAddAndRemoveComputerGroups": false,
+            "canCreateNewComputers": false,
+            "canDeleteComputers": false,
+            "canDismissAlerts": false,
+            "canEditComputerProperties": false,
+            "canImportComputers": false,
+            "canManageCloudAccounts": false,
+            "canManageDirectories": false,
+            "canManageVCenters": false,
+            "canTagComputers": false,
+            "canViewNotRelatedToComputers": true,
+            "canViewOtherComputers": true
+          },
+          "contactRights": {
+            "canCreateNewContacts": false,
+            "canDeleteContacts": false,
+            "canEditContactProperties": false,
+            "canViewContacts": false
+          },
+          "diagnosticRights": { "canCreateDiagnosticPackages": false },
+          "assetValueRights": {
+            "canCreateNewAssetValues": false,
+            "canDeleteAssetValues": false,
+            "canEditAssetValueProperties": false
+          },
+          "licenseRights": {
+            "canChangeLicense": false,
+            "canViewLicense": false
+          },
+          "multiTenantRights": {
+            "canCreateTenants": false,
+            "canDeleteTenants": false,
+            "canEditTenantGeneralProperties": false,
+            "canEditTenantModules": false,
+            "canEditTenantAccountDetails": false,
+            "canEditTenantFeatures": false,
+            "canEditTenantSettings": false,
+            "canCreateAndEditTenantDatabaseServers": false,
+            "canDeleteTenantDatabaseServers": false,
+            "canManageTenantAPIKeys": false,
+            "canSignInAsTenant": false,
+            "canViewTenants": false
+          },
+          "policyRights": {
+            "canCreateNewPolicies": false,
+            "canDeletePolicies": false,
+            "canEditPolicyProperties": false,
+            "canImportPolicies": false,
+            "canViewOtherPolicies": true
+          },
+          "portListRights": {
+            "canCreateNewPortLists": false,
+            "canDeletePortLists": false,
+            "canEditPortListProperties": false
+          },
+          "proxyRights": {
+            "canCreateNewProxies": false,
+            "canDeleteProxies": false,
+            "canEditProxyProperties": false
+          },
+          "relayGroupRights": {
+            "canCreateNewRelayGroups": false,
+            "canDeleteRelayGroups": false,
+            "canEditRelayGroupProperties": false
+          },
+          "scanCacheRights": { "canManageScanCache": false },
+          "scheduledTaskRights": {
+            "canCreateNewScheduledTasks": false,
+            "canDeleteScheduledTasks": false,
+            "canEditScheduledTaskProperties": false,
+            "canExecuteScheduledTasks": false,
+            "canViewScheduledTasks": false
+          },
+          "scheduleRights": {
+            "canCreateNewSchedules": false,
+            "canDeleteSchedules": false,
+            "canEditScheduleProperties": false
+          },
+          "settingRights": {
+            "canEditSettings": false,
+            "canViewSettings": false
+          },
+          "expertSettingRights": {
+            "canEditExpertSettings": false,
+            "canViewExpertSettings": false
+          },
+          "syslogConfigurationRights": {
+            "canCreateNewSyslogConfigurations": false,
+            "canDeleteSyslogConfigurations": false,
+            "canEditSyslogConfigurationProperties": false
+          },
+          "systemInformationRights": {
+            "canManageExtensions": false,
+            "canManageNodes": false,
+            "canViewSystemInformation": false
+          },
+          "taggingRights": {
+            "canDeleteAutoTagRules": false,
+            "canUpdateAutoTagRules": false,
+            "canRunAutoTagRules": false,
+            "canDeleteTags": false,
+            "canTag": false
+          },
+          "updateRights": {
+            "canImportSoftware": false,
+            "canDeleteSoftware": false,
+            "canEditSoftwareProperties": false,
+            "canImportRuleUpdates": false,
+            "canDeleteRuleUpdates": false,
+            "canViewRuleUpdates": false
+          },
+          "apikeyRights": {
+            "canCreateNewApiKeys": false,
+            "canDeleteApiKeys": false,
+            "canEditApiKeyProperties": false,
+            "canViewApiKeys": false
+          },
+          "iplistRights": {
+            "canCreateNewIPLists": false,
+            "canDeleteIPLists": false,
+            "canEditIPListProperties": false
+          },
+          "samlidentityProviderRights": {
+            "canCreateNewSAMLIdentityProviders": false,
+            "canDeleteSAMLIdentityProviders": false,
+            "canEditSAMLIdentityProviders": false,
+            "canViewSAMLIdentityProviders": false
+          }
+        },
+        "antiMalwareRights": {
+          "antiMalwareConfigurationRights": {
+            "canCreateNewAntiMalwareConfigurations": false,
+            "canDeleteAntiMalwareConfigurations": false,
+            "canEditAntiMalwareConfigurations": false
+          },
+          "directoryListRights": {
+            "canCreateNewDirectoryLists": false,
+            "canDeleteDirectoryLists": false,
+            "canEditDirectoryListProperties": false
+          },
+          "fileListRights": {
+            "canCreateNewFileLists": false,
+            "canDeleteFileLists": false,
+            "canEditFileListProperties": false
+          },
+          "fileExtensionListRights": {
+            "canCreateNewFileExtensionLists": false,
+            "canDeleteFileExtensionLists": false,
+            "canEditFileExtensionListProperties": false
+          },
+          "identifiedFileRights": {
+            "canDeleteIdentifiedFiles": false,
+            "canDownloadIdentifiedFiles": false,
+            "canRestoreIdentifiedFiles": false,
+            "canSubmitIdentifiedFiles": false
+          }
+        },
+        "webReputationRights": {
+          "webReputationConfigurationRights": {
+            "canEditWebReputationConfiguration": false
+          }
+        },
+        "sensingModeRights": {
+          "sensingModeConfigurationRights": {
+            "canEditSensingModeConfiguration": false
+          }
+        },
+        "firewallRights": {
+          "contextRights": {
+            "canCreateNewContexts": false,
+            "canDeleteContexts": false,
+            "canEditContextProperties": false
+          },
+          "firewallRuleRights": {
+            "canCreateNewFirewallRules": false,
+            "canDeleteFirewallRules": false,
+            "canEditFirewallRuleProperties": false
+          },
+          "statefulConfigurationRights": {
+            "canCreateNewStatefulConfigurations": false,
+            "canDeleteStatefulConfigurations": false,
+            "canEditStatefulConfigurationProperties": false
+          },
+          "macListRights": {
+            "canCreateNewMACLists": false,
+            "canDeleteMACLists": false,
+            "canEditMACListProperties": false
+          }
+        },
+        "intrusionPreventionRights": {
+          "applicationTypeRights": {
+            "canCreateNewApplicationTypes": false,
+            "canDeleteApplicationTypes": false,
+            "canEditApplicationTypeProperties": false
+          },
+          "intrusionPreventionRuleRights": {
+            "canCreateNewIntrusionPreventionRules": false,
+            "canDeleteIntrusionPreventionRules": false,
+            "canEditIntrusionPreventionRuleProperties": false
+          }
+        },
+        "integrityMonitoringRights": {
+          "integrityMonitoringRuleRights": {
+            "canCreateNewIntegrityMonitoringRules": false,
+            "canDeleteIntegrityMonitoringRules": false,
+            "canEditIntegrityMonitoringRuleProperties": false
+          }
+        },
+        "logInspectionRights": {
+          "logInspectionDecoderRights": {
+            "canCreateNewLogInspectionDecoders": false,
+            "canDeleteLogInspectionDecoders": false,
+            "canEditLogInspectionDecoderProperties": false
+          },
+          "logInspectionRuleRights": {
+            "canCreateNewLogInspectionRules": false,
+            "canDeleteLogInspectionRules": false,
+            "canEditLogInspectionRuleProperties": false
+          }
+        },
+        "applicationControlRights": {
+          "driftRights": {
+            "canAllowOrBlockDrift": false,
+            "canViewDrift": false
+          },
+          "rulesetRights": {
+            "canCreateNewRulesets": false,
+            "canDeleteRulesets": false,
+            "canEditRulesetProperties": false,
+            "canViewRulesets": false
+          },
+          "ruleRights": {
+            "canCreateNewAppControlRules": false,
+            "canDeleteAppControlRules": false,
+            "canEditAppControlRulesProperties": false,
+            "canViewAppControlRules": false
+          },
+          "softwareInventoryRights": {
+            "canCreateNewSoftwareInventory": false,
+            "canDeleteSoftwareInventory": false,
+            "canViewSoftwareInventory": false
+          }
+        },
+        "hostedServiceRights": {
+          "accountRights": {
+            "canDeleteAccounts": false,
+            "canUpdateAccounts": false,
+            "canViewAccountBilling": false
+          },
+          "fixRights": { "canViewFixes": false },
+          "heapRights": { "canViewHeap": false },
+          "licenseRateRights": {
+            "canSaveLicenseRates": false,
+            "canViewLicenseRates": false
+          },
+          "queryRights": { "canViewQuery": false },
+          "queryTracebackRights": { "canViewQueryTracebacks": false },
+          "serverLogRights": { "canViewServerLogs": false },
+          "stackTraceRights": { "canViewStackTraces": false },
+          "networkSecurityRights": {
+            "canCreateDeviceAuthorizationTokens": false
+          }
+        }
+      },
+      "ID": 2
+    },
+    {
+      "name": "New Role",
+      "description": "",
+      "urn": "urn:tmds:identity:us-east-ds-1:78422:role/New Role",
+      "immutable": false,
+      "canOnlyManipulateUsersWithEqualOrLesserRights": false,
+      "allComputers": true,
+      "allPolicies": true,
+      "allowUserInterface": true,
+      "allowWebService": false,
+      "rights": {
+        "platformRights": {
+          "administratorRights": {
+            "canCreateNewAdministrators": false,
+            "canDeleteAdministrators": false,
+            "canEditAdministratorProperties": false,
+            "canViewAdministrators": true
+          },
+          "administratorRoleRights": {
+            "canCreateNewAdministratorRoles": false,
+            "canDeleteAdministratorRoles": false,
+            "canEditAdministratorRoleProperties": false,
+            "canViewAdministratorRoles": true
+          },
+          "agentVersionControlRights": { "canEditAgentVersionControls": false },
+          "alertConfigurationRights": { "canEditAlertConfigurations": false },
+          "alertRights": { "canDismissGlobalAlerts": false },
+          "certificateRights": {
+            "canCreateNewCertificates": false,
+            "canDeleteCertificates": false
+          },
+          "computerRights": {
+            "canAddAndRemoveComputerGroups": false,
+            "canCreateNewComputers": false,
+            "canDeleteComputers": false,
+            "canDismissAlerts": false,
+            "canEditComputerProperties": false,
+            "canImportComputers": false,
+            "canManageCloudAccounts": false,
+            "canManageDirectories": false,
+            "canManageVCenters": false,
+            "canTagComputers": false,
+            "canViewNotRelatedToComputers": true,
+            "canViewOtherComputers": true
+          },
+          "contactRights": {
+            "canCreateNewContacts": false,
+            "canDeleteContacts": false,
+            "canEditContactProperties": false,
+            "canViewContacts": false
+          },
+          "diagnosticRights": { "canCreateDiagnosticPackages": false },
+          "assetValueRights": {
+            "canCreateNewAssetValues": false,
+            "canDeleteAssetValues": false,
+            "canEditAssetValueProperties": false
+          },
+          "licenseRights": {
+            "canChangeLicense": false,
+            "canViewLicense": false
+          },
+          "multiTenantRights": {
+            "canCreateTenants": false,
+            "canDeleteTenants": false,
+            "canEditTenantGeneralProperties": false,
+            "canEditTenantModules": false,
+            "canEditTenantAccountDetails": false,
+            "canEditTenantFeatures": false,
+            "canEditTenantSettings": false,
+            "canCreateAndEditTenantDatabaseServers": false,
+            "canDeleteTenantDatabaseServers": false,
+            "canManageTenantAPIKeys": false,
+            "canSignInAsTenant": false,
+            "canViewTenants": false
+          },
+          "policyRights": {
+            "canCreateNewPolicies": false,
+            "canDeletePolicies": false,
+            "canEditPolicyProperties": false,
+            "canImportPolicies": false,
+            "canViewOtherPolicies": true
+          },
+          "portListRights": {
+            "canCreateNewPortLists": false,
+            "canDeletePortLists": false,
+            "canEditPortListProperties": false
+          },
+          "proxyRights": {
+            "canCreateNewProxies": false,
+            "canDeleteProxies": false,
+            "canEditProxyProperties": false
+          },
+          "relayGroupRights": {
+            "canCreateNewRelayGroups": false,
+            "canDeleteRelayGroups": false,
+            "canEditRelayGroupProperties": false
+          },
+          "scanCacheRights": { "canManageScanCache": false },
+          "scheduledTaskRights": {
+            "canCreateNewScheduledTasks": false,
+            "canDeleteScheduledTasks": false,
+            "canEditScheduledTaskProperties": false,
+            "canExecuteScheduledTasks": false,
+            "canViewScheduledTasks": false
+          },
+          "scheduleRights": {
+            "canCreateNewSchedules": false,
+            "canDeleteSchedules": false,
+            "canEditScheduleProperties": false
+          },
+          "settingRights": {
+            "canEditSettings": false,
+            "canViewSettings": false
+          },
+          "expertSettingRights": {
+            "canEditExpertSettings": false,
+            "canViewExpertSettings": false
+          },
+          "syslogConfigurationRights": {
+            "canCreateNewSyslogConfigurations": false,
+            "canDeleteSyslogConfigurations": false,
+            "canEditSyslogConfigurationProperties": false
+          },
+          "systemInformationRights": {
+            "canManageExtensions": false,
+            "canManageNodes": false,
+            "canViewSystemInformation": false
+          },
+          "taggingRights": {
+            "canDeleteAutoTagRules": false,
+            "canUpdateAutoTagRules": false,
+            "canRunAutoTagRules": false,
+            "canDeleteTags": false,
+            "canTag": false
+          },
+          "updateRights": {
+            "canImportSoftware": false,
+            "canDeleteSoftware": false,
+            "canEditSoftwareProperties": false,
+            "canImportRuleUpdates": false,
+            "canDeleteRuleUpdates": false,
+            "canViewRuleUpdates": false
+          },
+          "apikeyRights": {
+            "canCreateNewApiKeys": false,
+            "canDeleteApiKeys": false,
+            "canEditApiKeyProperties": false,
+            "canViewApiKeys": true
+          },
+          "iplistRights": {
+            "canCreateNewIPLists": false,
+            "canDeleteIPLists": false,
+            "canEditIPListProperties": false
+          },
+          "samlidentityProviderRights": {
+            "canCreateNewSAMLIdentityProviders": false,
+            "canDeleteSAMLIdentityProviders": false,
+            "canEditSAMLIdentityProviders": false,
+            "canViewSAMLIdentityProviders": false
+          }
+        },
+        "antiMalwareRights": {
+          "antiMalwareConfigurationRights": {
+            "canCreateNewAntiMalwareConfigurations": false,
+            "canDeleteAntiMalwareConfigurations": false,
+            "canEditAntiMalwareConfigurations": false
+          },
+          "directoryListRights": {
+            "canCreateNewDirectoryLists": false,
+            "canDeleteDirectoryLists": false,
+            "canEditDirectoryListProperties": false
+          },
+          "fileListRights": {
+            "canCreateNewFileLists": false,
+            "canDeleteFileLists": false,
+            "canEditFileListProperties": false
+          },
+          "fileExtensionListRights": {
+            "canCreateNewFileExtensionLists": false,
+            "canDeleteFileExtensionLists": false,
+            "canEditFileExtensionListProperties": false
+          },
+          "identifiedFileRights": {
+            "canDeleteIdentifiedFiles": false,
+            "canDownloadIdentifiedFiles": false,
+            "canRestoreIdentifiedFiles": false,
+            "canSubmitIdentifiedFiles": false
+          }
+        },
+        "webReputationRights": {
+          "webReputationConfigurationRights": {
+            "canEditWebReputationConfiguration": false
+          }
+        },
+        "sensingModeRights": {
+          "sensingModeConfigurationRights": {
+            "canEditSensingModeConfiguration": false
+          }
+        },
+        "firewallRights": {
+          "contextRights": {
+            "canCreateNewContexts": false,
+            "canDeleteContexts": false,
+            "canEditContextProperties": false
+          },
+          "firewallRuleRights": {
+            "canCreateNewFirewallRules": false,
+            "canDeleteFirewallRules": false,
+            "canEditFirewallRuleProperties": false
+          },
+          "statefulConfigurationRights": {
+            "canCreateNewStatefulConfigurations": false,
+            "canDeleteStatefulConfigurations": false,
+            "canEditStatefulConfigurationProperties": false
+          },
+          "macListRights": {
+            "canCreateNewMACLists": false,
+            "canDeleteMACLists": false,
+            "canEditMACListProperties": false
+          }
+        },
+        "intrusionPreventionRights": {
+          "applicationTypeRights": {
+            "canCreateNewApplicationTypes": false,
+            "canDeleteApplicationTypes": false,
+            "canEditApplicationTypeProperties": false
+          },
+          "intrusionPreventionRuleRights": {
+            "canCreateNewIntrusionPreventionRules": false,
+            "canDeleteIntrusionPreventionRules": false,
+            "canEditIntrusionPreventionRuleProperties": false
+          }
+        },
+        "integrityMonitoringRights": {
+          "integrityMonitoringRuleRights": {
+            "canCreateNewIntegrityMonitoringRules": false,
+            "canDeleteIntegrityMonitoringRules": false,
+            "canEditIntegrityMonitoringRuleProperties": false
+          }
+        },
+        "logInspectionRights": {
+          "logInspectionDecoderRights": {
+            "canCreateNewLogInspectionDecoders": false,
+            "canDeleteLogInspectionDecoders": false,
+            "canEditLogInspectionDecoderProperties": false
+          },
+          "logInspectionRuleRights": {
+            "canCreateNewLogInspectionRules": false,
+            "canDeleteLogInspectionRules": false,
+            "canEditLogInspectionRuleProperties": false
+          }
+        },
+        "applicationControlRights": {
+          "driftRights": {
+            "canAllowOrBlockDrift": false,
+            "canViewDrift": false
+          },
+          "rulesetRights": {
+            "canCreateNewRulesets": false,
+            "canDeleteRulesets": false,
+            "canEditRulesetProperties": false,
+            "canViewRulesets": false
+          },
+          "ruleRights": {
+            "canCreateNewAppControlRules": false,
+            "canDeleteAppControlRules": false,
+            "canEditAppControlRulesProperties": false,
+            "canViewAppControlRules": false
+          },
+          "softwareInventoryRights": {
+            "canCreateNewSoftwareInventory": false,
+            "canDeleteSoftwareInventory": false,
+            "canViewSoftwareInventory": false
+          }
+        },
+        "hostedServiceRights": {
+          "accountRights": {
+            "canDeleteAccounts": false,
+            "canUpdateAccounts": false,
+            "canViewAccountBilling": false
+          },
+          "fixRights": { "canViewFixes": false },
+          "heapRights": { "canViewHeap": false },
+          "licenseRateRights": {
+            "canSaveLicenseRates": false,
+            "canViewLicenseRates": false
+          },
+          "queryRights": { "canViewQuery": false },
+          "queryTracebackRights": { "canViewQueryTracebacks": false },
+          "serverLogRights": { "canViewServerLogs": false },
+          "stackTraceRights": { "canViewStackTraces": false },
+          "networkSecurityRights": {
+            "canCreateDeviceAuthorizationTokens": false
+          }
+        }
+      },
+      "ID": 3
+    },
+    {
+      "name": "New Role_2",
+      "description": "",
+      "urn": "urn:tmds:identity:us-east-ds-1:78422:role/New Role_2",
+      "immutable": false,
+      "canOnlyManipulateUsersWithEqualOrLesserRights": false,
+      "allComputers": true,
+      "allPolicies": true,
+      "allowUserInterface": true,
+      "allowWebService": false,
+      "rights": {
+        "platformRights": {
+          "administratorRights": {
+            "canCreateNewAdministrators": false,
+            "canDeleteAdministrators": false,
+            "canEditAdministratorProperties": false,
+            "canViewAdministrators": false
+          },
+          "administratorRoleRights": {
+            "canCreateNewAdministratorRoles": false,
+            "canDeleteAdministratorRoles": false,
+            "canEditAdministratorRoleProperties": false,
+            "canViewAdministratorRoles": false
+          },
+          "agentVersionControlRights": { "canEditAgentVersionControls": false },
+          "alertConfigurationRights": { "canEditAlertConfigurations": false },
+          "alertRights": { "canDismissGlobalAlerts": false },
+          "certificateRights": {
+            "canCreateNewCertificates": false,
+            "canDeleteCertificates": false
+          },
+          "computerRights": {
+            "canAddAndRemoveComputerGroups": false,
+            "canCreateNewComputers": false,
+            "canDeleteComputers": false,
+            "canDismissAlerts": false,
+            "canEditComputerProperties": false,
+            "canImportComputers": false,
+            "canManageCloudAccounts": false,
+            "canManageDirectories": false,
+            "canManageVCenters": false,
+            "canTagComputers": false,
+            "canViewNotRelatedToComputers": true,
+            "canViewOtherComputers": true
+          },
+          "contactRights": {
+            "canCreateNewContacts": false,
+            "canDeleteContacts": false,
+            "canEditContactProperties": false,
+            "canViewContacts": false
+          },
+          "diagnosticRights": { "canCreateDiagnosticPackages": false },
+          "assetValueRights": {
+            "canCreateNewAssetValues": false,
+            "canDeleteAssetValues": false,
+            "canEditAssetValueProperties": false
+          },
+          "licenseRights": {
+            "canChangeLicense": false,
+            "canViewLicense": false
+          },
+          "multiTenantRights": {
+            "canCreateTenants": false,
+            "canDeleteTenants": false,
+            "canEditTenantGeneralProperties": false,
+            "canEditTenantModules": false,
+            "canEditTenantAccountDetails": false,
+            "canEditTenantFeatures": false,
+            "canEditTenantSettings": false,
+            "canCreateAndEditTenantDatabaseServers": false,
+            "canDeleteTenantDatabaseServers": false,
+            "canManageTenantAPIKeys": false,
+            "canSignInAsTenant": false,
+            "canViewTenants": false
+          },
+          "policyRights": {
+            "canCreateNewPolicies": false,
+            "canDeletePolicies": false,
+            "canEditPolicyProperties": false,
+            "canImportPolicies": false,
+            "canViewOtherPolicies": true
+          },
+          "portListRights": {
+            "canCreateNewPortLists": false,
+            "canDeletePortLists": false,
+            "canEditPortListProperties": false
+          },
+          "proxyRights": {
+            "canCreateNewProxies": false,
+            "canDeleteProxies": false,
+            "canEditProxyProperties": false
+          },
+          "relayGroupRights": {
+            "canCreateNewRelayGroups": false,
+            "canDeleteRelayGroups": false,
+            "canEditRelayGroupProperties": false
+          },
+          "scanCacheRights": { "canManageScanCache": false },
+          "scheduledTaskRights": {
+            "canCreateNewScheduledTasks": false,
+            "canDeleteScheduledTasks": false,
+            "canEditScheduledTaskProperties": false,
+            "canExecuteScheduledTasks": false,
+            "canViewScheduledTasks": false
+          },
+          "scheduleRights": {
+            "canCreateNewSchedules": false,
+            "canDeleteSchedules": false,
+            "canEditScheduleProperties": false
+          },
+          "settingRights": {
+            "canEditSettings": false,
+            "canViewSettings": false
+          },
+          "expertSettingRights": {
+            "canEditExpertSettings": false,
+            "canViewExpertSettings": false
+          },
+          "syslogConfigurationRights": {
+            "canCreateNewSyslogConfigurations": false,
+            "canDeleteSyslogConfigurations": false,
+            "canEditSyslogConfigurationProperties": false
+          },
+          "systemInformationRights": {
+            "canManageExtensions": false,
+            "canManageNodes": false,
+            "canViewSystemInformation": false
+          },
+          "taggingRights": {
+            "canDeleteAutoTagRules": false,
+            "canUpdateAutoTagRules": false,
+            "canRunAutoTagRules": false,
+            "canDeleteTags": false,
+            "canTag": false
+          },
+          "updateRights": {
+            "canImportSoftware": false,
+            "canDeleteSoftware": false,
+            "canEditSoftwareProperties": false,
+            "canImportRuleUpdates": false,
+            "canDeleteRuleUpdates": false,
+            "canViewRuleUpdates": false
+          },
+          "apikeyRights": {
+            "canCreateNewApiKeys": false,
+            "canDeleteApiKeys": false,
+            "canEditApiKeyProperties": false,
+            "canViewApiKeys": false
+          },
+          "iplistRights": {
+            "canCreateNewIPLists": false,
+            "canDeleteIPLists": false,
+            "canEditIPListProperties": false
+          },
+          "samlidentityProviderRights": {
+            "canCreateNewSAMLIdentityProviders": false,
+            "canDeleteSAMLIdentityProviders": false,
+            "canEditSAMLIdentityProviders": false,
+            "canViewSAMLIdentityProviders": false
+          }
+        },
+        "antiMalwareRights": {
+          "antiMalwareConfigurationRights": {
+            "canCreateNewAntiMalwareConfigurations": false,
+            "canDeleteAntiMalwareConfigurations": false,
+            "canEditAntiMalwareConfigurations": false
+          },
+          "directoryListRights": {
+            "canCreateNewDirectoryLists": false,
+            "canDeleteDirectoryLists": false,
+            "canEditDirectoryListProperties": false
+          },
+          "fileListRights": {
+            "canCreateNewFileLists": false,
+            "canDeleteFileLists": false,
+            "canEditFileListProperties": false
+          },
+          "fileExtensionListRights": {
+            "canCreateNewFileExtensionLists": false,
+            "canDeleteFileExtensionLists": false,
+            "canEditFileExtensionListProperties": false
+          },
+          "identifiedFileRights": {
+            "canDeleteIdentifiedFiles": false,
+            "canDownloadIdentifiedFiles": false,
+            "canRestoreIdentifiedFiles": false,
+            "canSubmitIdentifiedFiles": false
+          }
+        },
+        "webReputationRights": {
+          "webReputationConfigurationRights": {
+            "canEditWebReputationConfiguration": false
+          }
+        },
+        "sensingModeRights": {
+          "sensingModeConfigurationRights": {
+            "canEditSensingModeConfiguration": false
+          }
+        },
+        "firewallRights": {
+          "contextRights": {
+            "canCreateNewContexts": false,
+            "canDeleteContexts": false,
+            "canEditContextProperties": false
+          },
+          "firewallRuleRights": {
+            "canCreateNewFirewallRules": false,
+            "canDeleteFirewallRules": false,
+            "canEditFirewallRuleProperties": false
+          },
+          "statefulConfigurationRights": {
+            "canCreateNewStatefulConfigurations": false,
+            "canDeleteStatefulConfigurations": false,
+            "canEditStatefulConfigurationProperties": false
+          },
+          "macListRights": {
+            "canCreateNewMACLists": false,
+            "canDeleteMACLists": false,
+            "canEditMACListProperties": false
+          }
+        },
+        "intrusionPreventionRights": {
+          "applicationTypeRights": {
+            "canCreateNewApplicationTypes": false,
+            "canDeleteApplicationTypes": false,
+            "canEditApplicationTypeProperties": false
+          },
+          "intrusionPreventionRuleRights": {
+            "canCreateNewIntrusionPreventionRules": false,
+            "canDeleteIntrusionPreventionRules": false,
+            "canEditIntrusionPreventionRuleProperties": false
+          }
+        },
+        "integrityMonitoringRights": {
+          "integrityMonitoringRuleRights": {
+            "canCreateNewIntegrityMonitoringRules": false,
+            "canDeleteIntegrityMonitoringRules": false,
+            "canEditIntegrityMonitoringRuleProperties": false
+          }
+        },
+        "logInspectionRights": {
+          "logInspectionDecoderRights": {
+            "canCreateNewLogInspectionDecoders": false,
+            "canDeleteLogInspectionDecoders": false,
+            "canEditLogInspectionDecoderProperties": false
+          },
+          "logInspectionRuleRights": {
+            "canCreateNewLogInspectionRules": false,
+            "canDeleteLogInspectionRules": false,
+            "canEditLogInspectionRuleProperties": false
+          }
+        },
+        "applicationControlRights": {
+          "driftRights": {
+            "canAllowOrBlockDrift": false,
+            "canViewDrift": false
+          },
+          "rulesetRights": {
+            "canCreateNewRulesets": false,
+            "canDeleteRulesets": false,
+            "canEditRulesetProperties": false,
+            "canViewRulesets": false
+          },
+          "ruleRights": {
+            "canCreateNewAppControlRules": false,
+            "canDeleteAppControlRules": false,
+            "canEditAppControlRulesProperties": false,
+            "canViewAppControlRules": false
+          },
+          "softwareInventoryRights": {
+            "canCreateNewSoftwareInventory": false,
+            "canDeleteSoftwareInventory": false,
+            "canViewSoftwareInventory": false
+          }
+        },
+        "hostedServiceRights": {
+          "accountRights": {
+            "canDeleteAccounts": false,
+            "canUpdateAccounts": false,
+            "canViewAccountBilling": false
+          },
+          "fixRights": { "canViewFixes": false },
+          "heapRights": { "canViewHeap": false },
+          "licenseRateRights": {
+            "canSaveLicenseRates": false,
+            "canViewLicenseRates": false
+          },
+          "queryRights": { "canViewQuery": false },
+          "queryTracebackRights": { "canViewQueryTracebacks": false },
+          "serverLogRights": { "canViewServerLogs": false },
+          "stackTraceRights": { "canViewStackTraces": false },
+          "networkSecurityRights": {
+            "canCreateDeviceAuthorizationTokens": false
+          }
+        }
+      },
+      "ID": 4
+    }
+  ]
+}

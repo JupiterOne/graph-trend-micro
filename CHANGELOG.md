@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Renamed trend_micro_computer to trend_micro_sensor and change its \_class to
+  HostAgent
+- Updated tests and added API mocks
+
 ## 3.0.0 - 2023-11-30
 
 - Updated to node 18
